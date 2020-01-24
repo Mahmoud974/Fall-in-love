@@ -1,0 +1,378 @@
+$fontFamilyMontserrat: 'Montserrat', sans-serif;
+$colorOrange: #ed6950;
+$colorYellow: #ffc74a;
+
+
+body
+{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    
+}
+h1
+{
+   font-family: $fontFamilyMontserrat;
+   font-weight: 100;
+   font-size: 92px;
+   animation : pulse 4s ease 0s infinite normal none;
+
+   @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+   br
+   {
+       color: $colorOrange;
+   }
+}
+%bouttonArrondi
+{
+    margin-top: 40px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: bold;
+    
+    
+ 
+}
+.bloc1
+{
+    background-image: url("img/bloc1.png");
+    
+    height: 1206px;
+    width: 100%;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+    .logo
+    {
+        display: flex;
+        align-items: center;
+        
+        
+        
+        img
+        {
+          width: 25%;
+          margin-right: 20px;
+          margin-bottom: 10px;
+            
+            
+          
+          
+        }
+        p{
+           
+            font-size: 22px;
+        }
+        
+    }
+
+   
+
+
+    ul
+    {
+        margin-top: 10px;
+        display: flex;
+        list-style: none;
+        li{
+            margin-left: 30px;
+
+           i
+           {
+               color: $colorYellow;
+           }
+    }
+
+   
+}
+}
+.blocInt1
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 340px;
+
+    .orange
+    {
+        color: $colorOrange;
+    }
+  
+}
+
+.popular
+{
+    display: flex;
+    align-items: center;
+    
+
+    .searchLittle
+    {
+        text-align: center;
+    }
+}
+.blocButton
+{
+    display: flex;
+    
+    justify-content: center;
+
+
+.rr 
+{
+@extend %bouttonArrondi;
+
+}
+
+}
+
+/*Bloc2*/
+
+.bloc2
+{
+
+height: 1258px;
+
+
+
+
+}
+.blocImages ul
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top:-150px;
+    list-style: none;
+
+   
+}
+.blocH2
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    font-weight: 900;
+
+
+
+   
+ 
+    
+}
+.blocMenu{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    .btn-secondary, .btn-outline-dark
+{
+    @extend %bouttonArrondi;
+  
+}
+
+}
+.card
+{
+    margin:20px 10px;
+    max-width: 30%;
+    text-align: center;
+    box-shadow: 10px 5px 5px lighten(black, 90%);
+    background: #fdfdfd;
+
+    img
+    {
+        padding-top: 10px;
+    }
+    
+}
+.card-body
+{
+    color: black;
+    .btn-light
+    
+{
+    @extend %bouttonArrondi;
+   margin: 20px;
+   padding: 10px 40px;
+   
+  
+}
+}
+/*bloc3*/
+.bloc3
+{
+    background-image: url("img/bannierBloc3.png");
+    color: black;
+    height: 892px;
+    margin-top: 300px;
+
+
+}
+.blocExplorer
+{
+    display: flex;
+    justify-content: center;
+    
+    
+   
+}
+.txtExplorer
+{
+    padding-top: 250px;
+    line-height: 30px;
+
+    .rr
+    {
+        @extend %bouttonArrondi;
+    }
+
+   
+}
+.imgExplorer
+{
+    img
+    {
+        padding-top: 160px;    
+    }
+}
+
+/*Enjoy*/
+
+.enjoy{
+
+    background-image: url("img/bannerJourney.png");
+    height: 637px;
+    display: flex;
+
+    .blocJourney
+{
+    margin: auto;
+    text-align: center;
+   
+    .rr
+    {
+        @extend %bouttonArrondi;
+    }
+
+    p
+    {
+        padding-top: 50px;
+    }
+}
+
+}
+
+
+.footerBan
+{
+    background-image: url("img/footer.png");
+    height: 498px;
+    color: black;
+    display: flex;
+
+    .footer1
+    {
+        margin: auto;
+        text-align: center;
+        
+        p
+        {
+            padding: 20px;
+        }
+    }
+}
+
+
+  form
+  {
+      display: flex;
+      justify-content: center;
+      
+      
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+ 
+
+.s004 form .inner-form .input-field {
+  width: 100%;
+  position: relative;
+  
+  
+  
+  
+}
+
+
+
+.s004 form .inner-form .input-field .btn-search {
+  width: 70px;
+ 
+  display: flex;
+  
+      align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+ 
+      justify-content: center;
+ 
+  
+  
+}
+
+.s004 form .inner-form .input-field .btn-search svg {
+  fill: $colorYellow;
+  width: 40px;
+  height: 40px;
+
+
+ 
+}
+
+
+
+
+
+
