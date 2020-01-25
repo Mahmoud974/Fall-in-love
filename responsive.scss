@@ -4,7 +4,7 @@ $screen-littlePhone: 320px;
 $screen-sm: 576px;
 $screen-md: 700px;
 $screen-lg: 800px;
-$screen-xl: 1200px;
+$screen-xl: 1256px;
 
 $screen-littlePhoneA:"only screen and (max-width:  #{$screen-littlePhone})";
 $screen-sm-min: "only screen and (max-width:  #{$screen-sm})";
@@ -13,4 +13,5 @@ $screen-md-min: "only screen and (min-width:  #{$screen-md})";
 $screen-md-max: "only screen and (max-width:  #{$screen-md})";
 $screen-lg-max: "only screen and (max-width:  #{$screen-lg})";
 $screen-lg-min: "only screen and (min-width:  #{$screen-lg})";
-$screen-xl-max: "only screen and (min-width:  #{$screen-xl})";
+$screen-xl-max: "only screen and (max-width:  #{$screen-xl})";
+$screen-xl-min: "only screen and (min-width:  #{$screen-xl})";

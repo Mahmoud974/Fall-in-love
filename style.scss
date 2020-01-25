@@ -1,3 +1,4 @@
+@import "responsive.scss";
 $fontFamilyMontserrat: 'Montserrat', sans-serif;
 $colorOrange: #ed6950;
 $colorYellow: #ffc74a;
@@ -142,7 +143,7 @@ nav
 .rr 
 {
 @extend %bouttonArrondi;
-
+color: #cc9314;
 }
 
 }
@@ -152,7 +153,7 @@ nav
 .bloc2
 {
 
-height: 758px;
+height: 858px;
 
 
 
@@ -165,6 +166,7 @@ height: 758px;
     position: relative;
     margin-top:-150px;
     list-style: none;
+    
 
    
 }
@@ -194,29 +196,55 @@ height: 758px;
 }
 .card
 {
-    margin:20px 10px;
-    max-width: 30%;
+    margin:20px auto;
+    max-width: 28%;
+    border: none;
     text-align: center;
     box-shadow: 10px 5px 5px lighten(black, 90%);
     background: #fdfdfd;
+    transition-duration: 0.24s;
+    filter: grayscale(1);
 
     img
     {
         padding-top: 10px;
+        width: 100%;
+        opacity: 0.5;
+       
+       
     }
+   
     
+}
+.card:hover
+{
+    max-width: 30%;
+    filter: grayscale(0);
+
+    img
+    {
+        
+        opacity: 1;
+    }
 }
 .card-body
 {
-    color: black;
+    color: #838485;
+    font-weight: bold;
     .btn-light
     
 {
     @extend %bouttonArrondi;
    margin: 20px;
    padding: 10px 40px;
-   
-  
+   box-shadow: 10px 5px 5px lighten(black, 90%);
+   color: #838485;
+ 
+}
+.btn-light:hover
+{
+background: #ffc74a;
+color: #cc9314;
 }
 }
 /*bloc3*/
@@ -273,6 +301,7 @@ height: 758px;
     .rr
     {
         @extend %bouttonArrondi;
+        color: #cc9314;
     }
 
     p
@@ -369,6 +398,65 @@ height: 758px;
 
 
  
+}
+
+@media #{$screen-lg-max}
+{
+
+    .bloc3
+    {
+        background: rgb(240, 240, 240);
+        color: black;
+        height: 1592px;
+        margin-top: 300px;
+    
+    
+    }
+
+    .txtExplorer
+{
+    
+    text-align: center;
+
+    
+
+   
+}
+.imgExplorer
+{
+    display: flex;
+}
+
+
+.footerBan
+{
+    background: rgb(240, 240, 240);
+   
+   
+}
+.bloc2
+{
+    height: 800px;
+}
+.blocImages ul
+{
+    display: none;
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top:-150px;
+    list-style: none;
+
+    li
+    {
+        width: 30%;
+    }
+    
+
+   
+}
+
 }
 
 
